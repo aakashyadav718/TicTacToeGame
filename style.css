@@ -1,0 +1,77 @@
+/* Existing Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #333;
+  }
+  
+  .cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .game-info {
+    text-align: center;
+  }
+  
+  .status {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  .winning-line {
+    position: absolute;
+    background-color: rgb(168, 67, 235);
+    height: 3px;
+    width: 0;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    z-index: 1;
+  }
+  .status {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  
+  button {
+    margin-left: 20px;
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 10%;
+    background-color: #eab5b530;
+}
+  
